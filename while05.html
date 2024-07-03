@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while - ejemplo 05</title>
+</head>
+<body>
+    <div style="width:75%; margin:auto">
+        <div style="float:left ;"> 
+            Instituto CERTUS
+        </div>
+        <div style="float:right ;">
+            Programacion web - While
+        </div>
+        <div>
+            <img src="/img/banner2.jpg" width="100%"   alt="">
+        </div>
+        <div style="text-align:center ; color:brown">
+            TABLA DE MULTIPLICAR
+        </div>
+        <div>
+            <button onclick="multiplicar();">Multiplicar</button>
+        </div>
+        <div id="zona">
+        
+        </div>
+    </div>
+    <script>
+        function multiplicar(){
+        //mostrar la tabla de multiplicar
+        let xn = parseInt(prompt("Ingrese numero : "));
+        //Mostrar la tabla  
+        let k = 1;
+        while (k<=12){
+            document.getElementById("zona").innerHTML += (xn + "x" + k + "=" + xn*k + "<br>");
+            k +=1;
+        }
+    }
+
+    </script>
+</body>
+</html>

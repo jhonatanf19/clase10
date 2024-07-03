@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <div class="cabecera">
+        <div style="width: 75%; margin: auto;">
+            <div style="float: left;">
+                INMOBILIARIA CERTUS
+            </div>
+            <div style="float:right; padding: 10px;"> 
+                atencion@certus.edu.pe
+            </div>
+            <div>
+                <img src="img/banner2.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo">
+        <div id="barra">
+            <p style="text-align: center; margin-bottom: 30px;">Menú principal</p> 
+            <ul>
+                <li><a href="#" onclick="mostrarPag('pagina1')">Oficina</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina2')">Multifamiliar</a></li> 
+                <li><a href="#" onclick="mostrarPag('pagina3')">Plano de interior</a></li> 
+                <li><a href="#" onclick="cerrar();">Cerrar sesión</a></li>
+            </ul>    
+        </div>
+        <div id="contenido">
+
+            <div id="pagina1" class="pag active">
+                <h1>Plan de Oficina</h1>
+                <p>Capacidad 25 personas</p>
+                <img src="img/oficina.jpg" width="100%" alt="">
+            </div>
+            <div id="pagina2" class="pag">
+                <h1>Modelo multifamiliar</h1>
+                <p>Cocina - Dormitorio Baño - Sala</p>
+                <img src="img/multifamiliar.jpg" width="100%" alt=""> 
+            </div>
+            <div id="pagina3" class="pag">
+                <h1>Interior del edificio</h1>
+                <p>Interior amoblado con piscina</p>
+                <img src="img/frontis.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="pie">
+        <div style="width:100%;">
+            <div style="text-align:center;">
+                autor: Jhonatan Frank Portillo <br>
+                Instituto CERTUS 
+            </div>
+        </div>
+    </div>
+    <script src="/js/java.js"></script>
+</body>
+</html>
